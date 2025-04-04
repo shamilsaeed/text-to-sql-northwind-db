@@ -12,7 +12,6 @@ class SyntheticDatasetGenerator:
     def __init__(self):
        self.llm = "gpt-3.5-turbo"
 
-        
     def generate_examples(self, query_type: str, num_examples: int = 15):
         # Create the prompt with the specific query type
         prompt_template = """
@@ -201,7 +200,7 @@ if __name__ == "__main__":
     ]
     
     # Create or open the output file in write mode
-    with open("src/data/synthetic_examples.jsonl", "w") as f:
+    with open("data/synthetic_examples.jsonl", "w") as f:
         for query_type in query_types:
             examples = generator.generate_examples(query_type, 15)
             

@@ -10,10 +10,18 @@ packages = [{include = "src"}]
 python = ">=3.11,<3.12"
 numpy = ">=1.19.0,<2.0.0"
 pandas = "^2.2.3"
-sqlalchemy = "^2.0.40"
 pyodbc = "^5.2.0"
 python-dotenv = "^1.1.0"
 openai = "0.28"
+scikit-learn = "^1.6.1"
+datasets = "^3.5.0"
+transformers = {extras = ["torch"], version = "^4.50.3"}
+torch = "^2.6.0"
+hf-xet = "^1.0.0"
+sentencepiece = "^0.2.0"
+rouge-score = "^0.1.2"
+peft = "^0.15.1"
+bitsandbytes = "^0.45.4"
 
 
 [tool.poetry.group.dev.dependencies]

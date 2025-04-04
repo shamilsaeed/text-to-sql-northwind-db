@@ -13,3 +13,12 @@ Setup:
 4. Ran the instnwnd.sql file to get the Northwind database
 
 5. Created a subset of the Northwind database using the Customer/Orders/Products/Categories/Order Details tables using the create_northwind_db.sql file
+
+
+Execution:
+
+poetry run python -m src.data.create_dataset
+
+poetry run python -m src.data.split
+
+
